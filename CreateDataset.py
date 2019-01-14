@@ -16,7 +16,7 @@ while (userID not in userDatabase):
         break
     except typeError:
         pass
-os.mkdir("dataset/" + str(userID))
+# os.mkdir("dataset/" + str(userID))
 
 cam = cv2.VideoCapture(0)
 cam.set(3, 640)  # set video width
@@ -45,7 +45,7 @@ while(True):
         count += 1
 
         # Save the captured image into the datasets folder
-        cv2.imwrite("dataset/" + str(userID) + "/" + "User." + str(userID) + '.' + str(count) + ".jpg", gray[y:y + h, x:x + w])
+        cv2.imwrite("dataset/" + str(userID) + '.' + str(count) + ".jpg", gray[y:y + h, x:x + w])
 
         cv2.imshow('image', img)
 

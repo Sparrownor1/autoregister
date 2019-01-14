@@ -73,7 +73,7 @@ while(True):
             if checkface == 'y':
                 cv2.imwrite("dataset/User." + str(id) + '.' + '30' + ".jpg", gray[y:y + h, x:x + w])
                 breakloop = True
-                #doSomething
+                #write image
             elif checkface == 'n':
                 pass
                 #Should not predict same User again

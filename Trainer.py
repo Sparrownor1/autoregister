@@ -2,9 +2,14 @@ import cv2
 import numpy as np
 from PIL import Image
 import os
+from UserList import *
+
+users = open("UserList.txt", "r")
+userDatabase = getUserList(users)
+users.close()
 # Path for face image database
 # NOTE: works if pictures are all in one folder
-path = 'dataset'
+path = 'dataset/'
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 detector = cv2.CascadeClassifier("/usr/local/Cellar/opencv/3.4.2/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml")
 # function to get the images and label data

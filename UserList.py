@@ -12,3 +12,4 @@ def getUserList(filename):
 def writeUserList(filename, userDict):
     for num in userDict:
         filename.write(str(num) + " = " + str(userDict[num]) + "\n")
+    
