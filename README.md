@@ -7,3 +7,5 @@ Order of programs:
 3. CreateDataset.py #Creates dataset for a user
 4. Trainer.py #Trains faces and makes a file
 5. FacialRegister.py
+
+FacialRegister.py only needs access to the trainer file in the trainer directory i.e. faces can be trained on a different machine and trainer file can be sent to register machine
